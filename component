@@ -1,0 +1,5 @@
+CREATE src/app/a-image/a-image.component.scss (0 bytes)
+CREATE src/app/a-image/a-image.component.html (22 bytes)
+CREATE src/app/a-image/a-image.component.spec.ts (627 bytes)
+CREATE src/app/a-image/a-image.component.ts (279 bytes)
+UPDATE src/app/app.module.ts (577 bytes)
