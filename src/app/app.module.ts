@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { AComponentComponent } from './a-component/a-component.component';
 import { AImageComponent } from './a-image/a-image.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { EInfoComponent } from './e-info/e-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AComponentComponent,
     AImageComponent,
-    FormComponentComponent
+    FormComponentComponent,
+    EInfoComponent
   ],
   imports: [
     BrowserModule,
