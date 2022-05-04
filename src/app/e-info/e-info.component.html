@@ -1,20 +1,30 @@
-<p>e-info works!</p> <!--so here i make use of ngFor to loop throught the Info-->
+<!--so here i make use of ngFor to loop throught the Info-->
 
-<button type="button" name="button" (click)="getInfoFromService1">
+<form #frm ='ngForm' (ngSubmit)="updateInfo(frm)">      <!--I have to add FormsModule two way binding in the import from app.component-->
+    <div>                                      <!--I have to add to import { FormsModule } from '@angular/forms'-->
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button"> Add Info </button>
+    </div>
+
+
+</form>
+
+<br>
+
+<button type="button" name="button" (click)="getInfoFromService1()">
 <!--here is the methon called on the event of click the button-->
-Click for Employee1
-</button>
+Click for Employee1 </button>
 <ul class="list-group">
     <li *ngFor="let info of infoReceived1" class="list-group-info"> {{info}} </li>
     <!--I bind it to the method getInfoFromService with a button-->
 </ul>
 <!--now for the rest of the employees-->
 
-<button type="button" name="button" (click)="getInfoFromService2"> Employee 2 </button>
+<button type="button" name="button" (click)="getInfoFromService2()"> Employee 2 </button>
 <ul class="list-group">
     <li *ngFor="let info of infoReceived2" class="list-group-info"> {{info}} </li>
 </ul>
-<button type="button" name="button" (click)="getInfoFromService3"> Employee 3 </button>
+<button type="button" name="button" (click)="getInfoFromService3()"> Employee 3 </button>
 <ul class="list-group">
     <li *ngFor="let info of infoReceived3" class="list-group-info"> {{info}} </li>
 </ul> 

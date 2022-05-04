@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -26,5 +28,15 @@ export class DataService {
     
    // ALL THIS INFORMATION IS TO BE RETRIEVE IN THE EMPLOYEE COMPONENT CREATED ... MAKING USE DEPENDENCIES
    // GO BACK TO E-INFO.COMPONENT.TS WHERE I AM GOING TO IMPORT THE SERVICES.
+
+    addInfo(info: string){
+      this.info1.push(info)
+      this.info2.push(info)
+      this.info3.push(info)
+      return this.info1
+    }
+    
+
+    constructor () {}
 
   }
