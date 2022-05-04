@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms'; //two way binding
-
+// 22 I have added the FormsModule , go back to the component.html
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,7 @@ import { AComponentComponent } from './a-component/a-component.component';
 import { AImageComponent } from './a-image/a-image.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { EInfoComponent } from './e-info/e-info.component';
+import { EDutyComponent } from './e-duty/e-duty.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EInfoComponent } from './e-info/e-info.component';
     AComponentComponent,
     AImageComponent,
     FormComponentComponent,
-    EInfoComponent
+    EInfoComponent,
+    EDutyComponent
   ],
   imports: [
     BrowserModule,

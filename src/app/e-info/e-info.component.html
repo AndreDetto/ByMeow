@@ -10,7 +10,7 @@
 </form>
 
 <br>
-
+<div class="infoCards">
 <button type="button" name="button" (click)="getInfoFromService1()">
 <!--here is the methon called on the event of click the button-->
 Click for Employee1 </button>
@@ -28,4 +28,5 @@ Click for Employee1 </button>
 <ul class="list-group">
     <li *ngFor="let info of infoReceived3" class="list-group-info"> {{info}} </li>
 </ul> 
+</div>
 <!--get the selector in the main component-->

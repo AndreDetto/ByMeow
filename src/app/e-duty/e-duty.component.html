@@ -1,0 +1,41 @@
+
+<!-- 19 now I add a form to add data, i can also delete, retrieve, alter...-->
+<form #frm="ngForm" (ngSubmit)="updateDuties(frm)">
+    <!-- 30 now the value that we received has to be passed in to the method with (ngSubmit)="update...(frm)" -->
+    <!-- 21 I have to bind the ngForm in the app.modules.ts-->
+    <!-- 23 so I create another method to update the data into the records in the .ts files -->
+
+    <div class="">
+        <input type="text" name="location" value="" ngModel>
+
+        <button type="submit" name="button"> Add Duty </button>
+    </div>
+</form>
+<!-- 20 to access the element 'duty' I need a mehod to access it-->
+
+<br>
+
+<div class="infoCards">
+<!-- 16 is the creation of the UI-->
+
+<!-- 18 to actually call on the method we bind it in this case with a button-->
+<button type="button" name="button" (click)="getDutyFromService1()"> First Duty </button>
+
+<ul class="list-group"> 
+    <!-- 17 the informatiion is retrived by the method as we loop throught it-->
+    <li *ngFor="let duty of dutyReceived1" class="list-group-info"> {{ duty }} </li>
+</ul>
+
+
+<button type="button" name="button" (click)="getDutyFromService2()"> Second Duty </button>
+<ul class="list-group">
+    <li *ngFor="let duty of dutyReceived2" class="list-group-info"> {{ duty }} </li>
+</ul>
+
+<button type="button" name="button" (click)="getDutyFromService3()"> Third Duty </button>
+<ul class="list-group">
+    <li *ngFor="let duty of dutyReceived3" class="list-group-info"> {{ duty }} </li>
+</ul>
+
+     
+</div>
