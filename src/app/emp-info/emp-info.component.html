@@ -1,0 +1,35 @@
+<!-- 16 UI DISPLAY for the data retrived with a simple list of it -->
+
+<!-- 21 I want to add data... -->
+<form #frm="ngForm" (ngSubmit)="updateEmploye(frm)">
+    <div>
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button"> Add Employer </button>
+    </div>
+</form>
+
+<br>
+
+<div class="infoCards">
+<!-- 17 BUTTONS three for each of the empolyee -->
+
+<button type="button" name="button" (click)="getInfoFromEmp1()"> First Button </button>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let data of infoFromEmployer1"> {{ data }} </li>
+</ul>
+
+
+<button type="button" name="button" (click)="getInfoFromEmp2()"> Second Button </button>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let data of infoFromEmployer2"> {{ data }} </li>
+</ul>
+
+
+<button type="button" name="button" (click)="getInfoFromEmp3()"> Third Button </button>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let data of infoFromEmployer3"> {{ data }} </li>
+</ul>
+
+
+<!-- 18 BIND SELECTOR the component to the main .html so back in the component.ts file to copy the SELECTOR -->
+</div>

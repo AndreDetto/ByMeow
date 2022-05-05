@@ -12,6 +12,7 @@ import { AImageComponent } from './a-image/a-image.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { EInfoComponent } from './e-info/e-info.component';
 import { EDutyComponent } from './e-duty/e-duty.component';
+import { EmpInfoComponent } from './emp-info/emp-info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EDutyComponent } from './e-duty/e-duty.component';
     AImageComponent,
     FormComponentComponent,
     EInfoComponent,
-    EDutyComponent
+    EDutyComponent,
+    EmpInfoComponent
   ],
   imports: [
     BrowserModule,
